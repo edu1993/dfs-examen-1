@@ -38,7 +38,17 @@ function App() {
       setPartido({ ...partido, tarjetasRojasLocal: partido.tarjetasRojasLocal + 1 })
       return
     }
-
+    if (equipo === 'reset') {
+      setPartido({
+        golesLocal: 0,
+        golesVisitante: 0,
+        tarjetasAmarillasVisitante: 0,
+        tarjetasAmarillasLocal: 0,
+        tarjetasRojasVisitante: 0,
+        tarjetasRojasLocal: 0 
+      })
+      return
+    }
   }
 
   return (

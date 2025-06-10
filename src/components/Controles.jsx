@@ -13,7 +13,10 @@ const Controles = ({ onGol }) => {
         <button onClick={() => { onGol('visitante_amarilla') }}>🟨 Amarilla</button>
         <button onClick={() => { onGol('visitante_roja') }}>🟥 Roja</button>        
       </div>
-    </div>
+      <div>
+        <button onClick={() => { onGol('reset') }}>Reiniciar</button>
+    </div>  
+    </div>    
   )
 }
 
