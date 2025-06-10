@@ -17,13 +17,13 @@ const Display = ({ partido }) => {
           </tr>
           <tr>
             <th scope="row">🟨</th>
-            <td>0</td>
-            <td>0</td>
+            <td>{partido.tarjetasAmarillasLocal}</td>
+            <td>{partido.tarjetasAmarillasVisitante}</td>
           </tr>
           <tr>
             <th scope="row">🟥</th>
-            <td>0</td>
-            <td>0</td>
+            <td>{partido.tarjetasRojasLocal}</td>
+            <td>{partido.tarjetasRojasVisitante}</td>
           </tr>
         </tbody>
       </table>
